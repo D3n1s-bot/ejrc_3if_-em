@@ -13,6 +13,12 @@ namespace ejrc_3if__em
             int nota;
             Console.WriteLine("ingresew nota");
             nota = Convert.ToInt32(Console.ReadLine());
+
+            while (nota < 0 || nota > 20)
+            {
+                Console.WriteLine("nota invalida, ingrese nuevamente");
+                nota = Convert.ToInt32(Console.ReadLine());
+            }
             if (nota >= 16)
             {
                 Console.WriteLine("exelente");
